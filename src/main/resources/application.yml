@@ -7,11 +7,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: create-drop
-
 ---
-
 spring:
-  profiles:   test
+  profiles: test
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
     driverClassName: org.h2.Driver

@@ -6,14 +6,14 @@ Built using spring-boot and Java11.
 `mvn clean install
 `
 
-**Run**: when build is complete then run.
+**Run**: when build is complete then run. I have added test profile to use h2 database
 
-`java -jar target/pixel-tracker-0.0.1-SNAPSHOT.jar 
+`mvn spring-boot:run -Dspring-boot.run.profiles=test 
 `
 
 **Use Case**:
 
-navigate to http://localhost:8080/contact.html, http://localhost:8080/About.html
+navigate to http://localhost:8080/contact.html, http://localhost:8080/about.html
 
 above are simple html pages to demonstrate registering visits to the page.
 
